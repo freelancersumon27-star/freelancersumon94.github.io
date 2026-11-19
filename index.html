@@ -1,438 +1,911 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Md Sumon Miah - Personal Portfolio and Jarvis AI Project">
-<meta name="author" content="Md Sumon Miah">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Md Sumon Miah | Developer Portfolio</title>
+  <title>Freelancer Sumon 94 | AI, Automation & Digital Technology</title>
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  <meta name="description" content="Welcome to Freelancer Sumon 94's official portfolio. Explore AI projects, Jarvis AI, automation, digital marketing, professional profiles and achievements.">
 
-html {
-    scroll-behavior: smooth;
-}
+  <meta name="keywords" content="Freelancer Sumon 94, Md Sumon Mia, Jarvis AI, AI Automation, Digital Marketing, Freelancer, Portfolio">
 
-body {
-    font-family: Arial, sans-serif;
-    background: #080d1b;
-    color: #f1f5f9;
-    line-height: 1.7;
-}
+  <meta name="author" content="Freelancer Sumon 94">
+  <meta name="theme-color" content="#080d1b">
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
+  <meta property="og:title" content="Freelancer Sumon 94 | Official Portfolio">
+  <meta property="og:description" content="AI, Automation, Digital Technology and Professional Portfolio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freelancersumon94.github.io/">
+  <meta property="og:image" content="https://freelancersumon94.github.io/profile.jpg">
 
-header {
-    background: #111a2e;
-    padding: 18px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #263653;
-}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.logo {
-    color: #38bdf8;
-    font-size: 23px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-nav a {
-    color: #e2e8f0;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-.hero {
-    min-height: 520px;
-    display: flex;
-    align-items: center;
-    background: radial-gradient(circle at top right, #17345c, #080d1b 65%);
-    padding: 80px 0;
-}
-
-.hero h1 {
-    font-size: clamp(38px, 7vw, 65px);
-    line-height: 1.2;
-    margin: 20px 0;
-}
-
-.hero h1 span {
-    color: #38bdf8;
-}
-
-.hero p {
-    color: #b7c4d9;
-    max-width: 700px;
-    font-size: 18px;
-}
-
-.tagline {
-    color: #38bdf8;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.btn {
-    display: inline-block;
-    background: #38bdf8;
-    color: #07111e;
-    padding: 12px 24px;
-    border-radius: 8px;
-    margin: 25px 10px 0 0;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #7dd3fc;
-}
-
-.btn-outline {
-    background: transparent;
-    color: white;
-    border: 1px solid #38bdf8;
-}
-
-section {
-    padding: 75px 0;
-}
-
-.section-title {
-    font-size: 32px;
-    margin-bottom: 15px;
-    color: #38bdf8;
-}
-
-.section-desc {
-    color: #aab7cc;
-    margin-bottom: 30px;
-    max-width: 750px;
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 22px;
-}
-
-.card {
-    background: #111a2e;
-    border: 1px solid #263653;
-    padding: 25px;
-    border-radius: 13px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8;
-}
-
-.card h3 {
-    color: #38bdf8;
-    margin-bottom: 12px;
-}
-
-.card p {
-    color: #b7c4d9;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.skill {
-    background: #172744;
-    border: 1px solid #30496d;
-    padding: 9px 16px;
-    border-radius: 25px;
-    color: #dbeafe;
-}
-
-.project-link {
-    display: inline-block;
-    margin-top: 18px;
-    color: #38bdf8;
-    text-decoration: none;
-}
-
-.contact {
-    background: #111a2e;
-    padding: 35px;
-    border-radius: 15px;
-    border: 1px solid #263653;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    border-top: 1px solid #263653;
-    color: #94a3b8;
-}
-
-@media(max-width: 600px) {
-    nav {
-        flex-direction: column;
+  <style>
+    :root {
+      --bg: #080d1b;
+      --bg2: #0c1426;
+      --card: #111d32;
+      --card2: #17243c;
+      --text: #f4f7ff;
+      --muted: #a7b4ca;
+      --blue: #42baff;
+      --purple: #8b7cff;
+      --green: #48d6a0;
+      --border: rgba(255,255,255,.10);
+      --shadow: 0 18px 50px rgba(0,0,0,.25);
     }
 
-    nav ul {
-        justify-content: center;
-        gap: 12px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 95px;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1160px, 90%);
+      margin: auto;
+    }
+
+    .gradient {
+      background: linear-gradient(100deg, var(--blue), var(--purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 5vw, 43px);
+      line-height: 1.2;
+      margin: 12px 0;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8,13,27,.93);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -.7px;
+      white-space: nowrap;
+    }
+
+    .logo span {
+      color: var(--blue);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 23px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      transition: .25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      padding: 10px 17px;
+      border-radius: 8px;
+      background: var(--blue);
+      color: #07111f !important;
+      font-weight: 800 !important;
+    }
+
+    /* HERO */
 
     .hero {
-        min-height: 430px;
+      position: relative;
+      padding: 105px 0 100px;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 85% 25%, rgba(66,186,255,.15), transparent 40%),
+        radial-gradient(ellipse at 10% 80%, rgba(139,124,255,.13), transparent 40%);
     }
 
-    section {
-        padding: 55px 0;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 65px;
+      align-items: center;
     }
-}
-</style>
+
+    .availability {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      border-radius: 40px;
+      padding: 8px 15px;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .green-dot {
+      height: 8px;
+      width: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      box-shadow: 0 0 12px var(--green);
+    }
+
+    .hero h1 {
+      font-size: clamp(39px, 6.2vw, 72px);
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -2.5px;
+      margin-bottom: 22px;
+    }
+
+    .hero-description {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 13px 23px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .25s;
+      border: 1px solid var(--border);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(100deg, var(--blue), var(--purple));
+      color: #07111f;
+      border: none;
+    }
+
+    .btn-outline {
+      color: var(--text);
+      background: rgba(255,255,255,.04);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image-wrap {
+      position: relative;
+      max-width: 380px;
+      margin: auto;
+    }
+
+    .hero-image-frame {
+      padding: 9px;
+      border: 1px solid rgba(66,186,255,.35);
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(66,186,255,.15), rgba(139,124,255,.12));
+      transform: rotate(2deg);
+      box-shadow: 0 25px 80px rgba(0,0,0,.35);
+    }
+
+    .hero-image {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 23px;
+      background: var(--card);
+    }
+
+    .image-fallback {
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--muted);
+      background: var(--card);
+      border-radius: 20px;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    .hero-caption {
+      position: absolute;
+      bottom: 22px;
+      left: -30px;
+      background: #14233b;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 13px 19px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-caption strong {
+      display: block;
+      font-size: 13px;
+    }
+
+    .hero-caption small {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* STATS */
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 17px;
+      margin-top: 35px;
+      overflow: hidden;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 23px 10px;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat:last-child {
+      border: 0;
+    }
+
+    .stat strong {
+      font-size: 23px;
+      color: var(--blue);
+      display: block;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 4 / 4.5;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--card);
+    }
+
+    .about-content h3 {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .info-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+      margin: 25px 0;
+    }
+
+    .info-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      padding: 12px;
+      font-size: 12px;
+    }
+
+    .info-item strong {
+      color: var(--blue);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    /* SKILLS */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 17px;
+    }
+
+    .skill-card {
+      padding: 23px 17px;
+      text-align: center;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 14px;
+      transition: .25s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--blue);
+    }
+
+    .skill-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .skill-card h3 {
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    .skill-card p {
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* PROJECTS */
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(66,186,255,.5);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 205px;
+      object-fit: cover;
+      background: var(--card2);
+    }
+
+    .project-body {
+      padding: 23px;
+    }
+
+    .project-type {
+      font-size: 10px;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 800;
+    }
+
+    .project-body h3 {
+      font-size: 19px;
+      margin: 9px 0;
+    }
+
+    .project-body p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .project-status {
+      display: inline-block;
+      margin-top: 17px;
+      padding: 5px 11px;
+      background: rgba(72,214,160,.1);
+      color: var(--green);
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    /* CERTIFICATE */
+
+    .certificate-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: center;
+      background: var(--card);
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .certificate-img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--card2);
+    }
+
+    .certificate-info h3 {
+      font-size: 23px;
+      margin: 13px 0;
+    }
+
+    .certificate-info p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    /* PLATFORMS */
+
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .platform-card {
+      display: block;
+      padding: 22px;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      background: var(--card);
+      transition: .25s;
+    }
+
+    .platform-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--blue);
+    }
+
+    .platform-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .platform-card span {
+      color: var(--muted);
+      font-size: 11px;
+      overflow-wrap: anywhere;
+    }
+
+    /* CONTACT */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-box {
+      padding: 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    .contact-box h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-link {
+      display: flex;
+      flex-direction: column;
+      padding: 14px;
+      margin-bottom: 11px;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      transition: .2s;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-link:hover {
+      border-color: var(--blue);
+      transform: translateX(3px);
+    }
+
+    .contact-link strong {
+      color: var(--blue);
+      font-size: 13px;
+    }
+
+    .contact-link small {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 35px 0;
+      background: #060a14;
+      text-align: center;
+    }
+
+    footer .footer-name {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--blue);
+    }
+
+    footer p {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .back-top {
+      display: inline-block;
+      margin-top: 15px;
+      color: var(--blue);
+      font-size: 12px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width: 900px) {
+      .hero-grid, .about-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .hero-image-wrap {
+        max-width: 320px;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+    }
+
+    @media(max-width: 600px) {
+      .section {
+        padding: 70px 0;
+      }
+
+      .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+      }
+
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        font-size: 11px;
+      }
+
+      .nav-cta {
+        padding: 6px 10px;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.5px;
+      }
+
+      .hero-description {
+        font-size: 14px;
+      }
+
+      .hero-caption {
+        left: -10px;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .stat {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .info-list,
+      .project-grid,
+      .certificate-card,
+      .contact-grid,
+      .platform-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .certificate-card {
+        padding: 18px;
+      }
+
+      .about-content h3 {
+        font-size: 23px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-<div class="container">
-<nav>
-<div class="logo">SUMON MIAH</div>
+  <div class="container navbar">
+    <a class="logo" href="#home">FREELANCER <span>SUMON 94</span></a>
 
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificate">Certificate</a>
+      <a href="#contact" class="nav-cta">Contact Me</a>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-<section class="hero" id="home">
-<div class="container">
+  <!-- HERO SECTION -->
 
-<div class="tagline">Welcome to My Portfolio</div>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
 
-<h1>Hello, I'm<br>
-<span>Md Sumon Miah</span>
-</h1>
+      <div>
+        <div class="availability">
+          <span class="green-dot"></span>
+          Personal Portfolio & Professional Profile
+        </div>
 
-<p>
-Technology Enthusiast | AI Project Builder |
-Automation Explorer | Developer
-</p>
+        <h1>
+          Hello, I am<br>
+          <span class="gradient">Freelancer Sumon 94</span>
+        </h1>
 
-<p style="margin-top:15px">
-I am passionate about technology, artificial intelligence,
-automation, software development and building innovative
-digital solutions.
-</p>
+        <p class="hero-description">
+          Welcome to my official portfolio. I am Md. Sumon Miah,
+          passionate about Artificial Intelligence, Automation,
+          Digital Technology, Digital Marketing and innovative
+          technology projects. I enjoy learning, building and
+          exploring solutions that make everyday work smarter.
+        </p>
 
-<a href="#projects" class="btn">Explore My Projects</a>
-<a href="#contact" class="btn btn-outline">Contact Me</a>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore My Projects ↗</a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
 
-</div>
-</section>
+        <div class="stats">
+          <div class="stat">
+            <strong>AI</strong>
+            <span>Technology Interest</span>
+          </div>
+          <div class="stat">
+            <strong>Digital</strong>
+            <span>Marketing Learning</span>
+          </div>
+          <div class="stat">
+            <strong>94</strong>
+            <span>Professional Identity</span>
+          </div>
+        </div>
+      </div>
 
-<section id="about">
-<div class="container">
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img
+            src="profile.jpg"
+            alt="Freelancer Sumon 94"
+            class="hero-image"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="image-fallback" style="display:none">
+            Upload your profile photo as profile.jpg
+          </div>
+        </div>
 
-<h2 class="section-title">About Me</h2>
+        <div class="hero-caption">
+          <strong>Freelancer Sumon 94</strong>
+          <small>AI · Automation · Digital Technology</small>
+        </div>
+      </div>
 
-<p class="section-desc">
-I am Md Sumon Miah. I enjoy exploring modern technology
-and developing practical digital solutions.
+    </div>
+  </section>
 
-My interests include Artificial Intelligence,
-automation systems, software tools, API integration
-and intelligent development workflows.
+  <!-- ABOUT SECTION -->
 
-I believe in continuous learning, creativity,
-problem solving and building useful technology.
-</p>
+  <section class="section" id="about">
+    <div class="container">
 
-<div class="card">
-<h3>My Vision</h3>
-<p>
-My vision is to develop intelligent digital systems
-that make complex tasks easier, faster and more efficient.
-</p>
-</div>
+      <div class="section-heading">
+        <span class="section-label">Introduction</span>
+        <h2>About <span class="gradient">Me</span></h2>
+        <p>Discover my background, interests and professional journey.</p>
+      </div>
 
-</div>
-</section>
+      <div class="about-grid">
 
-<section id="skills">
-<div class="container">
+        <div>
+          <img
+            src="workspace.jpg"
+            alt="Freelancer Sumon professional workspace"
+            class="about-photo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="image-fallback" style="display:none">
+            Upload workspace.jpg
+          </div>
+        </div>
 
-<h2 class="section-title">Technical Interests</h2>
+        <div class="about-content">
+          <h3>I'm <span class="gradient">Freelancer Sumon 94</span></h3>
 
-<p class="section-desc">
-Technologies and development areas I am exploring.
-</p>
+          <p>
+            My name is Md. Sumon Miah. I am an independent learner
+            with a strong interest in digital technology, artificial
+            intelligence, automation and online platforms.
+          </p>
 
-<div class="skills">
-<span class="skill">Artificial Intelligence</span>
-<span class="skill">Python</span>
-<span class="skill">HTML5</span>
-<span class="skill">CSS3</span>
-<span class="skill">Git & GitHub</span>
-<span class="skill">API Integration</span>
-<span class="skill">Linux</span>
-<span class="skill">VPS Management</span>
-<span class="skill">Automation</span>
-<span class="skill">AI Workflows</span>
-<span class="skill">Project Management</span>
-</div>
+          <p>
+            I enjoy exploring how technology can simplify complex
+            tasks, improve productivity and create practical digital
+            solutions. My personal interests include AI-powered
+            workflows, digital marketing, web technologies and
+            continuous professional development.
+          </p>
 
-</div>
-</section>
+          <p>
+            My long-term vision is to develop intelligent digital
+            systems that make work easier, faster and more efficient.
+          </p>
 
-<section id="projects">
-<div class="container">
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Professional Name</strong>
+              Freelancer Sumon 94
+            </div>
+            <div class="info-item">
+              <strong>Full Name</strong>
+              Md. Sumon Miah
+            </div>
+            <div class="info-item">
+              <strong>Primary Interests</strong>
+              AI & Automation
+            </div>
+            <div class="info-item">
+              <strong>Learning Area</strong>
+              Digital Marketing
+            </div>
+          </div>
 
-<h2 class="section-title">My Projects</h2>
+          <a href="#contact" class="btn btn-primary">Get In Touch ↗</a>
+        </div>
 
-<p class="section-desc">
-Some of my technology projects and development interests.
-</p>
+      </div>
+    </div>
+  </section>
 
-<div class="card-grid">
+  <!-- SKILLS SECTION -->
 
-<div class="card">
-<h3>JARVIS AI PROJECT</h3>
-<p>
-An AI-powered personal technology project focused
-on intelligent automation, AI model integration,
-task coordination and developer workflows.
-</p>
-<div class="project-link">Main Featured Project</div>
-</div>
+  <section class="section" id="skills" style="background:var(--bg2)">
+    <div class="container">
 
-<div class="card">
-<h3>AI Automation</h3>
-<p>
-Exploring intelligent automation systems,
-API-based applications and workflows
-to improve productivity.
-</p>
-</div>
+      <div class="section-heading">
+        <span class="section-label">Capabilities</span>
+        <h2>Skills & <span class="gradient">Interests</span></h2>
+        <p>Technologies and professional areas I have studied or am exploring.</p>
+      </div>
 
-<div class="card">
-<h3>Developer Portfolio</h3>
-<p>
-A personal website built with HTML and CSS
-and published using GitHub Pages.
-</p>
-<a class="project-link"
-href="https://github.com/"
-target="_blank" rel="noopener">
-Explore GitHub →
-</a>
-</div>
+      <div class="skills-grid">
 
-</div>
-</div>
-</section>
+        <div class="skill-card">
+          <div class="skill-icon">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>AI tools and intelligent technology exploration.</p>
+        </div>
 
-<section id="vision">
-<div class="container">
-
-<h2 class="section-title">Future Goals</h2>
-
-<div class="card-grid">
-
-<div class="card">
-<h3>AI Development</h3>
-<p>Build smarter AI-assisted applications and systems.</p>
-</div>
-
-<div class="card">
-<h3>Automation</h3>
-<p>Create efficient and reliable automated workflows.</p>
-</div>
-
-<div class="card">
-<h3>Innovation</h3>
-<p>Turn creative ideas into useful digital products.</p>
-</div>
-
-</div>
-</div>
-</section>
-
-<section id="contact">
-<div class="container">
-
-<h2 class="section-title">Contact Me</h2>
-
-<div class="contact">
-<h3>Let's Connect!</h3>
-
-<p style="color:#b7c4d9; margin-top:10px">
-Thank you for visiting my portfolio.
-For collaboration, projects and professional connections,
-please visit my GitHub profile.
-</p>
-
-<a class="btn"
-href="https://github.com/freelancersumon27"
-target="_blank" rel="noopener">
-My GitHub Profile
-</a>
-
-</div>
-</div>
-</section>
-
-</main>
-
-<footer>
-<p>
-© <span id="year"></span> Md Sumon Miah.
-All Rights Reserved.
-</p>
-<p>Built with passion for technology.</p>
-</footer>
-
-<script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
-</script>
-
-</body>
-</html>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Automation</h3>
+          <p>Workflow automation and productivity systems
