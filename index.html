@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Md Sumon Miah - Personal Portfolio and Jarvis AI Project">
+<meta name="author" content="Md Sumon Miah">
+
+<title>Md Sumon Miah | Developer Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080d1b;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #111a2e;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #263653;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at top right, #17345c, #080d1b 65%);
+    padding: 80px 0;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    color: #b7c4d9;
+    max-width: 700px;
+    font-size: 18px;
+}
+
+.tagline {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #07111e;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin: 25px 10px 0 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #7dd3fc;
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid #38bdf8;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.section-desc {
+    color: #aab7cc;
+    margin-bottom: 30px;
+    max-width: 750px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #111a2e;
+    border: 1px solid #263653;
+    padding: 25px;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #b7c4d9;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #172744;
+    border: 1px solid #30496d;
+    padding: 9px 16px;
+    border-radius: 25px;
+    color: #dbeafe;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.contact {
+    background: #111a2e;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #263653;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #263653;
+    color: #94a3b8;
+}
+
+@media(max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">SUMON MIAH</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+<div class="container">
+
+<div class="tagline">Welcome to My Portfolio</div>
+
+<h1>Hello, I'm<br>
+<span>Md Sumon Miah</span>
+</h1>
+
+<p>
+Technology Enthusiast | AI Project Builder |
+Automation Explorer | Developer
+</p>
+
+<p style="margin-top:15px">
+I am passionate about technology, artificial intelligence,
+automation, software development and building innovative
+digital solutions.
+</p>
+
+<a href="#projects" class="btn">Explore My Projects</a>
+<a href="#contact" class="btn btn-outline">Contact Me</a>
+
+</div>
+</section>
+
+<section id="about">
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<p class="section-desc">
+I am Md Sumon Miah. I enjoy exploring modern technology
+and developing practical digital solutions.
+
+My interests include Artificial Intelligence,
+automation systems, software tools, API integration
+and intelligent development workflows.
+
+I believe in continuous learning, creativity,
+problem solving and building useful technology.
+</p>
+
+<div class="card">
+<h3>My Vision</h3>
+<p>
+My vision is to develop intelligent digital systems
+that make complex tasks easier, faster and more efficient.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+
+<h2 class="section-title">Technical Interests</h2>
+
+<p class="section-desc">
+Technologies and development areas I am exploring.
+</p>
+
+<div class="skills">
+<span class="skill">Artificial Intelligence</span>
+<span class="skill">Python</span>
+<span class="skill">HTML5</span>
+<span class="skill">CSS3</span>
+<span class="skill">Git & GitHub</span>
+<span class="skill">API Integration</span>
+<span class="skill">Linux</span>
+<span class="skill">VPS Management</span>
+<span class="skill">Automation</span>
+<span class="skill">AI Workflows</span>
+<span class="skill">Project Management</span>
+</div>
+
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+
+<h2 class="section-title">My Projects</h2>
+
+<p class="section-desc">
+Some of my technology projects and development interests.
+</p>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>JARVIS AI PROJECT</h3>
+<p>
+An AI-powered personal technology project focused
+on intelligent automation, AI model integration,
+task coordination and developer workflows.
+</p>
+<div class="project-link">Main Featured Project</div>
+</div>
+
+<div class="card">
+<h3>AI Automation</h3>
+<p>
+Exploring intelligent automation systems,
+API-based applications and workflows
+to improve productivity.
+</p>
+</div>
+
+<div class="card">
+<h3>Developer Portfolio</h3>
+<p>
+A personal website built with HTML and CSS
+and published using GitHub Pages.
+</p>
+<a class="project-link"
+href="https://github.com/"
+target="_blank" rel="noopener">
+Explore GitHub →
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="vision">
+<div class="container">
+
+<h2 class="section-title">Future Goals</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>AI Development</h3>
+<p>Build smarter AI-assisted applications and systems.</p>
+</div>
+
+<div class="card">
+<h3>Automation</h3>
+<p>Create efficient and reliable automated workflows.</p>
+</div>
+
+<div class="card">
+<h3>Innovation</h3>
+<p>Turn creative ideas into useful digital products.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+
+<h2 class="section-title">Contact Me</h2>
+
+<div class="contact">
+<h3>Let's Connect!</h3>
+
+<p style="color:#b7c4d9; margin-top:10px">
+Thank you for visiting my portfolio.
+For collaboration, projects and professional connections,
+please visit my GitHub profile.
+</p>
+
+<a class="btn"
+href="https://github.com/freelancersumon27"
+target="_blank" rel="noopener">
+My GitHub Profile
+</a>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>
+© <span id="year"></span> Md Sumon Miah.
+All Rights Reserved.
+</p>
+<p>Built with passion for technology.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
