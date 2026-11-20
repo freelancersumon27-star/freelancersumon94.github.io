@@ -431,94 +431,45 @@
 
     /* PROJECTS */
 
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
+    
+<div class="project-card">
+    <h3>Fiverr Portfolio</h3>
+    <p>Explore my freelance services and projects on Fiverr.</p>
+    <a href="https://www.fiverr.com/s/DmQN3EV"
+       target="_blank" rel="noopener noreferrer">
+       View Fiverr Gig
+    </a>
+</div>
 
-    .project-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      overflow: hidden;
-      transition: .3s;
-    }
+<div class="project-card">
+    <h3>Freelancer Portfolio</h3>
+    <p>Explore my freelance profile and work.</p>
+    <a href="https://www.freelancer.com/u/freelancersumo27"
+       target="_blank" rel="noopener noreferrer">
+       View Freelancer Profile
+    </a>
+</div>
 
-    .project-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(66,186,255,.5);
-    }
-
-    .project-image {
-      width: 100%;
-      height: 205px;
-      object-fit: cover;
-      background: var(--card2);
-    }
-
-    .project-body {
-      padding: 23px;
-    }
-
-    .project-type {
-      font-size: 10px;
-      color: var(--blue);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 800;
-    }
-
-    .project-body h3 {
-      font-size: 19px;
-      margin: 9px 0;
-    }
-
-    .project-body p {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .project-status {
-      display: inline-block;
-      margin-top: 17px;
-      padding: 5px 11px;
-      background: rgba(72,214,160,.1);
-      color: var(--green);
-      border-radius: 20px;
-      font-size: 10px;
-      font-weight: 700;
     }
 
     /* CERTIFICATE */
 
-    .certificate-card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-      align-items: center;
-      background: var(--card);
-      padding: 30px;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-    }
+    
+<div class="certificate-card">
+    <h3>eShikhon Certificate</h3>
+    <img
+        src="https://eshikhon.com.bd/wp-content/uploads/2022/03/3161750-88314.jpeg"
+        alt="My eShikhon Certificate"
+        style="width:100%; max-width:450px; border-radius:12px;"
+    >
+    <p>
+        <a href="https://eshikhon.com.bd/app/#component=course&action=course-stats&id=3161750&id=3161750"
+           target="_blank" rel="noopener noreferrer">
+           View Course Details
+        </a>
+    </p>
+</div>
 
-    .certificate-img {
-      width: 100%;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--card2);
-    }
-
-    .certificate-info h3 {
-      font-size: 23px;
-      margin: 13px 0;
-    }
-
-    .certificate-info p {
-      color: var(--muted);
-      font-size: 13px;
-      margin-bottom: 10px;
     }
 
     /* PLATFORMS */
@@ -556,51 +507,91 @@
       overflow-wrap: anywhere;
     }
 
-    /* CONTACT */
+   
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact Me</h2>
+        <p>Let's connect and work together.</p>
+    </div>
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
-    }
+    <div class="contact-grid">
 
-    .contact-box {
-      padding: 28px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-    }
+        <div class="contact-box">
+            <h3>Email</h3>
+            <a class="contact-link"
+               href="mailto:freelancersumon27@gmail.com">
+               freelancersumon27@gmail.com
+            </a>
+        </div>
 
-    .contact-box h3 {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
+        <div class="contact-box">
+            <h3>WhatsApp</h3>
+            <a class="contact-link"
+               href="https://wa.me/8801704901414"
+               target="_blank" rel="noopener noreferrer">
+               Chat on WhatsApp
+            </a>
+        </div>
 
-    .contact-link {
-      display: flex;
-      flex-direction: column;
-      padding: 14px;
-      margin-bottom: 11px;
-      background: var(--card2);
-      border: 1px solid var(--border);
-      border-radius: 9px;
-      transition: .2s;
-      overflow-wrap: anywhere;
-    }
+        <div class="contact-box">
+            <h3>LinkedIn</h3>
+            <a class="contact-link"
+               href="https://www.linkedin.com/in/freelancer-sumon-835492245/"
+               target="_blank" rel="noopener noreferrer">
+               Visit LinkedIn
+            </a>
+        </div>
 
-    .contact-link:hover {
-      border-color: var(--blue);
-      transform: translateX(3px);
-    }
+        <div class="contact-box">
+            <h3>YouTube</h3>
+            <a class="contact-link"
+               href="https://www.youtube.com/@IslamicWazAndNasheed"
+               target="_blank" rel="noopener noreferrer">
+               Visit YouTube
+            </a>
+        </div>
 
-    .contact-link strong {
-      color: var(--blue);
-      font-size: 13px;
-    }
+        <div class="contact-box">
+            <h3>Instagram</h3>
+            <a class="contact-link"
+               href="https://www.instagram.com/freelancersumon94/"
+               target="_blank" rel="noopener noreferrer">
+               Visit Instagram
+            </a>
+        </div>
 
-    .contact-link small {
-      color: var(--muted);
-      font-size: 11px;
+        <div class="contact-box">
+            <h3>Telegram</h3>
+            <a class="contact-link"
+               href="https://t.me/freelancer_sumon94"
+               target="_blank" rel="noopener noreferrer">
+               Chat on Telegram
+            </a>
+        </div>
+
+        <div class="contact-box">
+            <h3>Blog</h3>
+            <a class="contact-link"
+               href="https://freelancersumon27.blogspot.com/"
+               target="_blank" rel="noopener noreferrer">
+               Visit My Blog
+            </a>
+        </div>
+
+        <div class="contact-box">
+            <h3>GitHub</h3>
+            <a class="contact-link"
+               href="https://github.com/freelancersumon27-star"
+               target="_blank" rel="noopener noreferrer">
+               Visit GitHub
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- END CONTACT SECTION -->
+
     }
 
     /* FOOTER */
@@ -897,15 +888,17 @@
         <p>Technologies and professional areas I have studied or am exploring.</p>
       </div>
 
-      <div class="skills-grid">
+      
+<div class="skill-item">
+    <h3>Online Learning & Training</h3>
+    <p>Explore my eShikhon learning profile.</p>
+    <a href="https://eshikhon.com.bd/app/#component=profile&action=public"
+       target="_blank" rel="noopener noreferrer">
+       View eShikhon Profile
+    </a>
+</div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🤖</div>
-          <h3>Artificial Intelligence</h3>
-          <p>AI tools and intelligent technology exploration.</p>
-        </div>
-
-        <div class="skill-card">
+      <div class="skill-card">
           <div class="skill-icon">⚙️</div>
           <h3>Automation</h3>
           <p>Workflow automation and productivity systems
